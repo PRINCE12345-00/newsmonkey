@@ -1,0 +1,279 @@
+nav {
+  background-color: #333;
+  padding: 20px;
+}
+
+.topnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0d47a1;
+  padding: 12px 20px;
+}
+
+.topnav .brand a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.topnav .nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.topnav .nav-links li {
+  margin-left: 18px;
+}
+
+.topnav .nav-links a {
+  color: #e3f2fd;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-btn {
+  background: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.nav-btn:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+.nav-btn.active {
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #61dafb;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.news-box {
+  border: 1px solid #ddd;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.news-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.news-box h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.news-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.news-box p {
+  margin: 10px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.news-box a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.news-box a:hover {
+  text-decoration: underline;
+}
+
+.loading {
+  text-align: center;
+  padding: 50px;
+  font-size: 18px;
+  color: #666;
+}
+
+.error {
+  text-align: center;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+  border: 2px solid #e57373;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.error h2 {
+  color: #c62828;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.error-help {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error-help h3 {
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+.error-help ol {
+  padding-left: 20px;
+}
+
+.error-help li {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.api-link {
+  color: #1976d2 !important;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px 10px;
+  background: #e3f2fd;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.api-link:hover {
+  background: #bbdefb;
+}
+
+.demo-notice {
+  background: #e8f5e8;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 20px;
+  border-left: 4px solid #4caf50;
+  font-size: 16px;
+}
+
+.loading {
+  text-align: center;
+  padding: 50px;
+  font-size: 18px;
+  color: #666;
+}
+
+.loading-spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.news-date {
+  color: #666;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.news-source {
+  color: #888;
+  font-size: 11px;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
